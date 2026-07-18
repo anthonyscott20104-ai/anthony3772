@@ -31,4 +31,4 @@ jobs:
       run: Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "P@ssw0rd!" -Force)
 
     - name: Create Tunnel
-      run: .\ngrok\ngrok.exe tcp --url=6.tcp.ngrok.io:23728 3389
+      run: .\ngrok\ngrok.exe tcp --region=us --remote-addr=7.tcp.ngrok.io:27617 3389
